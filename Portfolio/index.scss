@@ -1,0 +1,755 @@
+$font-josefinsans: "Josefin Sans", "sans serif";
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+#wholeworks {
+  position: relative;
+  bottom: -500px;
+  animation-name: slideindown;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+#wholeskills {
+  position: relative;
+  right: -500px;
+  animation-name: slideinright;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+#wholecontact {
+  position: relative;
+  top: -500px;
+  animation-name: slideinup;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+#wholeabout {
+  position: relative;
+  left: -500px;
+  animation-name: slideinleft;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+//HomePage
+#indexBody {
+  background: linear-gradient(270deg, black 50%, white 50%);
+}
+
+#intro {
+  display: flex;
+  margin-left: 24.5%;
+  margin-top: 8%;
+  width: 60%;
+}
+#intro div {
+  flex: 1;
+}
+#itsme {
+  width: 55%;
+  height: auto;
+}
+
+#normalme {
+  width: 100%;
+  span {
+    display: block;
+    font-family: "Josefin Sans";
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+#mobileme {
+  display: none;
+}
+#otherlinks {
+  margin-top: 10%;
+}
+
+#otherlinks {
+  div {
+    text-align: center;
+    padding: 14px 18px;
+    font-family: $font-josefinsans;
+    font-weight: bold;
+    font-size: 2.2vw;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.2s ease-in;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+#otherlinks #about,
+#otherlinks #works {
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+}
+
+#otherlinks #skills,
+#otherlinks #contact {
+  background-color: white;
+  color: black;
+  font-size: 2vw;
+}
+
+//About Me
+.aboutme {
+  text-align: left;
+}
+
+.aboutmeheader,
+.skillsheader {
+  font-size: 2.4vw;
+  font-family: "Montserrat", "sans serif";
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.containerSvg {
+  padding-top: 10px;
+  height: 7.5vh;
+}
+.resumedownload {
+  position: absolute;
+  left: 5%;
+  bottom: 4%;
+  animation-name: toggleupdown;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.resumedownload:hover {
+  animation-play-state: paused;
+  opacity: 1;
+}
+.aboutmediv {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+#aboutmeinner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#aboutmedesc {
+  width: 100%;
+  height: auto;
+  p {
+    padding-top: 25px;
+    width: 100%;
+    font-size: 1.8vw;
+    font-family: $font-josefinsans;
+  }
+}
+.alsodiv {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+  div {
+    flex: 1;
+  }
+}
+.mebold {
+  font-weight: bold;
+  font-family: $font-josefinsans;
+  font-size: 1.4vw;
+}
+
+.alsoima {
+  font-weight: bold;
+  font-family: $font-josefinsans;
+  font-size: 2.2vw;
+}
+
+.alsoimadiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    text-align: center;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+.alsome {
+  width: 80%;
+  height: auto;
+}
+
+//Contact
+.contactheader {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.contactheader pre {
+  font-size: 2vw;
+  font-weight: 600;
+  font-family: $font-josefinsans;
+}
+.iconsdiv {
+  margin-top: 2%;
+}
+.contactform {
+  width: 25%;
+  margin-top: 3%;
+  form {
+    text-align: center;
+  }
+}
+
+.contactform input {
+  margin-top: 3%;
+  border: 2px solid black;
+  color: black;
+  font-family: $font-josefinsans;
+  border-radius: 0px;
+}
+
+.contactform input::placeholder {
+  color: black;
+}
+.contactform button {
+  margin-top: 6%;
+  width: 60%;
+}
+.contactform textarea {
+  margin-top: 4%;
+  border: 2px solid black;
+  color: black;
+  font-family: $font-josefinsans;
+  border-radius: 0px;
+}
+
+.contactform textarea::placeholder {
+  color: black;
+}
+
+.contactme {
+  text-align: center;
+  font-size: 2.4vw;
+  font-family: "Montserrat", "sans serif";
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.socialicons {
+  width: 20%;
+  height: 20%;
+}
+
+.btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: $font-josefinsans;
+  letter-spacing: 2px;
+  border-radius: 0px;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.downarrow {
+  margin-left: 30%;
+  margin-top: -35px;
+}
+
+//Skills
+.frontendtitle {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.frontendtitle p {
+  font-weight: bold;
+  color: black;
+  font-family: $font-josefinsans;
+}
+
+.frontendskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.frontendskills div {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  background-color: black;
+  margin: 10px;
+  color: white;
+  font-family: $font-josefinsans;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.frontendskills div span {
+  display: block;
+}
+
+.frontendskills div span:first-child {
+  font-weight: bold;
+}
+
+.otherskills {
+  margin-top: 5%;
+}
+
+.otherskills div {
+  text-align: center;
+}
+
+.otherskills div p {
+  font-weight: bold;
+  color: black;
+  font-family: $font-josefinsans;
+}
+
+.backendskills,
+.dbmsskills,
+.tools {
+  display: flex;
+  justify-content: center;
+}
+
+.backendskills div,
+.dbmsskills div,
+.tools div {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  margin: 10px;
+  color: white;
+  font-family: $font-josefinsans;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.backendskills div span,
+.dbmsskills div span,
+.tools div span {
+  display: block;
+}
+
+.backendskills div span:first-child,
+.dbmsskills div span:first-child,
+.tools div span:first-child {
+  font-weight: bold;
+}
+
+.myskills {
+  margin-top: 2%;
+}
+
+#backdb {
+  display: flex;
+  justify-content: center;
+}
+
+#tools {
+  margin-top: 5%;
+}
+
+//Works
+.websitecontainer {
+  margin-top: 3%;
+}
+
+.webheader {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.webheader > p {
+  font-family: $font-josefinsans;
+  font-weight: bold;
+  font-size: 2.4vw;
+  color: black;
+}
+
+.webheader span {
+  font-family: $font-josefinsans;
+  font-size: 1.8vw;
+}
+
+.websiteworks {
+  margin-top: 5%;
+}
+
+.websiteworks #design1,
+.websiteworks #design2 {
+  margin-top: 3%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.websiteworks #design1 .imgdiv,
+.websiteworks #design2 .imgdiv {
+  flex: 1;
+  text-align: center;
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.websiteworks #design1 .textdiv,
+.websiteworks #design2 .textdiv {
+  flex: 2;
+  span {
+    font-size: 1.5vw;
+    font-family: $font-josefinsans;
+  }
+  p {
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: $font-josefinsans;
+  }
+}
+
+#hackerimages {
+  display: flex;
+  margin-top: 5%;
+}
+
+#hackerimages div {
+  flex: 1;
+  text-align: center;
+}
+
+#hackerimages div img {
+  transition: transform 0.2s;
+}
+
+#hackerimages div img:hover {
+  transform: scale(2);
+}
+
+#hackerimages p {
+  padding-top: 5px;
+  font-size: 1.2vw;
+  font-weight: bold;
+  font-family: $font-josefinsans;
+}
+
+.logocontainer {
+  display: flex;
+  margin-top: 5%;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+
+.logocontainer div {
+  width: 50%;
+  height: 50%;
+}
+
+.logocontainer div img {
+  transition: transform 0.2s;
+}
+
+.logocontainer div img:hover {
+  transform: scale(2);
+}
+
+//Responsive for 576 to 600px
+@media only screen and (min-width: 576px) and (max-width: 600px) {
+  .skillsheader {
+    margin-left: -30px;
+    text-align: left;
+  }
+}
+//Responsive Start for 600px
+
+@media only screen and (max-width: 600px) {
+  //HomePage
+  #indexBody {
+    background: white;
+  }
+  #intro {
+    display: block;
+  }
+  #myphoto {
+    text-align: center;
+    width: 100%;
+  }
+  #itsme {
+    width: 80%;
+    height: auto;
+    margin-left: -10%;
+  }
+  #normalme {
+    display: none;
+  }
+
+  #mobileme {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    span {
+      display: block;
+      font-family: "Josefin Sans";
+      font-size: 40px;
+      color: black;
+      font-weight: bold;
+    }
+  }
+  #otherlinks #about,
+  #otherlinks #works,
+  #otherlinks #skills,
+  #otherlinks #contact {
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    border: 2px solid white;
+  }
+
+  //About Me
+  .aboutme {
+    text-align: center;
+  }
+  .aboutmeheader,
+  .skillsheader {
+    font-size: 23px;
+  }
+  .containerSvg {
+    display: none;
+  }
+  .aboutmediv {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  #aboutmedesc {
+    width: 100%;
+    p {
+      font-size: 21px;
+    }
+  }
+  .resumedownload {
+    position: fixed;
+    color: transparent;
+  }
+  .alsome {
+    width: 50%;
+    height: 50%;
+  }
+  .alsodiv {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .alsoimadiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+  .alsoima {
+    font-size: 25px;
+  }
+
+  //Works
+  .contactme {
+    font-size: 28px;
+  }
+  .webheader p {
+    font-size: 23px;
+    color: black;
+  }
+
+  .webheader span {
+    font-size: 18px;
+  }
+  .textdiv {
+    display: none;
+  }
+  .websiteworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hackerimages {
+    display: block;
+    div {
+      width: 100%;
+      height: auto;
+      p {
+        font-size: 17px;
+      }
+      img:hover {
+        transform: scale(1);
+      }
+    }
+  }
+  .logocontainer {
+    display: block;
+    div {
+      text-align: center;
+      width: 100%;
+      height: auto;
+      margin-top: 2%;
+      img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+    div img:hover {
+      transform: scale(1);
+    }
+  }
+
+  //Contact
+  .contactheader {
+    margin-top: 5%;
+  }
+  .contactheader pre {
+    font-size: 17px;
+  }
+  .contactform {
+    width: 60%;
+  }
+  .iconsdiv {
+    margin-left: 14%;
+    margin-top: 10%;
+  }
+
+  //Skills
+  .frontendskills div,
+  .backendskills div,
+  .dbmsskills div,
+  .tools div {
+    padding: 10px;
+    font-size: 3vw;
+  }
+}
+
+// Responsive End for 600px
+
+//Responsive Start for 600px to 768px
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  //About
+  .skillsheader {
+    font-size: 23px;
+  }
+  .aboutmeheader {
+    margin-left: 50px;
+  }
+  .containerSvg {
+    padding-top: 10px;
+    height: 35px;
+  }
+  #aboutmedesc {
+    p {
+      padding-top: 25px;
+      width: 100%;
+      font-size: 1.9vw;
+      font-family: $font-josefinsans;
+    }
+  }
+  .alsodiv {
+    width: 90%;
+  }
+  .alsoimadiv {
+    span {
+      font-weight: strong;
+      font-size: 14px;
+    }
+  }
+  .resumedownload {
+    bottom: 0;
+  }
+  .websiteworks #design1,
+  .websiteworks #design2 {
+    .imgdiv {
+      img {
+        width: 75%;
+      }
+    }
+  }
+}
+
+//Responsive End for 600px to 768px
+
+//Responsive Start for more than 768px
+@media screen and (min-width: 768px) {
+  .containerSvg {
+    padding-top: 10px;
+    height: 40px;
+  }
+  .alsodiv {
+    width: 90%;
+  }
+  .websiteworks #design1,
+  .websiteworks #design2 {
+    .imgdiv {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+//Animations
+@keyframes slideinleft {
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes slideinright {
+  50% {
+    right: 20px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes slideinup {
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes slideindown {
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes toggleupdown {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
