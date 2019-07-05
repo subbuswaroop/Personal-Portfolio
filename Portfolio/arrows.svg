@@ -1,0 +1,14 @@
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 61.5 71.01"
+          height="100%"
+        >
+          <title>Back To Home</title>
+          <polygon points="0.5 0.87 60.5 35.51 0.5 70.15 0.5 0.87" />
+          <path
+            d="M137,123.73l58.5,33.77L137,191.27V123.73M136,122v71l61.5-35.51L136,122Z"
+            transform="translate(-136 -121.99)"
+          />
+        </svg>
